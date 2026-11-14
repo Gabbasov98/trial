@@ -1,0 +1,250 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <div class="main-index">
+                <div class="main-index__img m-backdrop">
+                    <img src="img/main-index.webp" alt="">
+                </div>
+                <div class="container">
+                    <div class="main-index__inner">
+                        <div class="main-index__top">
+                            <h1 class="h1 caps-text">
+                                Коммерческая техника <span class="_no-wrap">для бизнеса</span> и государства
+                            </h1>
+                            <div class="_mt16">
+                                <div class="text20 text14-tablet medium-text">
+                                    от официального дилера Foton, Sagmoto <span class="_no-wrap">и АМТ-НВ</span>
+                                </div>
+                            </div>
+                            <div class="main-index__nav _mt32 _mt16-tablet _flex">
+                                <a href="" class="main-index__btn m-btn m-btn-orange">
+                                    <span>Каталог</span>
+                                    <img src="img/arrow-right.svg" alt="">
+                                </a>
+                                <a href="" class="main-index__btn m-btn m-btn-white-outline">
+                                    <span>Сервис</span>
+                                    <img src="img/arrow-right.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-index__bottom grid3">
+                            <div class="main-index__item">
+                                <img src="img/main-icon.webp" alt="">
+                                <span class="text20 text14-tablet">Спецтехника</span>
+                            </div>
+                            <div class="main-index__item">
+                                <img src="img/main-icon2.webp" alt="">
+                                <span class="text20 text14-tablet">Грузовые автомобили</span>
+                            </div>
+                            <div class="main-index__item">
+                                <img src="img/main-icon3.webp" alt="">
+                                <span class="text20 text14-tablet">Прицепы и полуприцепы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hot-index">
+                <div class="decor-wrap">
+                    <div class="decor-wrap__inner">
+                        <div class="container">
+                            <div class="h2 caps-text">
+                                Актуальное
+                            </div>
+                            <div class="hot-slider slider _mt32 _mt24-tablet">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            @@include('components/cards/_hot-card.html',{
+                                            "title":"Выгода до 100 000 р на Foton Aumark",
+                                            "badge":"Акция",
+                                            "badgeClass":"",
+                                            "img":"hot-img",
+                                            })
+                                        </div>
+                                        <div class="swiper-slide">
+                                            @@include('components/cards/_hot-card.html',{
+                                            "title":"Новые тягачи Sagmoto",
+                                            "badge":"Новинка",
+                                            "badgeClass":"_gray",
+                                            "img":"hot-img2",
+                                            })
+                                        </div>
+                                        <div class="swiper-slide">
+                                            @@include('components/cards/_hot-card.html',{
+                                            "title":"Сезонное ТО для спецтехники",
+                                            "badge":"сервис",
+                                            "badgeClass":"",
+                                            "img":"hot-img3",
+                                            })
+                                        </div>
+                                        <div class="swiper-slide">
+                                            @@include('components/cards/_hot-card.html',{
+                                            "title":"Прицепы и полуприцепы",
+                                            "badge":"Новинка",
+                                            "badgeClass":"_gray",
+                                            "img":"hot-img4",
+                                            })
+                                        </div>
+                                    </div>
+                                </div>
+                                @@include('components/ui/_swiper-nav.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-index m-section">
+                <div class="container">
+                    <div class="h2 caps-text-tablet">
+                        Каталог техники
+                    </div>
+                    <div class="catalog-index__desc">
+                        <div class="text20 medium-text">
+                            Широкий выбор коммерческого транспорта и спецтехники <span class="_no-wrap">от официальных</span> дилеров
+                        </div>
+                    </div>
+                    <div class="_mt40 _mt24-tablet grid3 grid-tablet2 grid-mob">
+                        @@include('components/cards/_category-card.html',{
+                        "title":"Тягачи",
+                        "price":"от 6 500 000 ₽",
+                        "img":"category-img",
+                        })
+                        @@include('components/cards/_category-card.html',{
+                        "title":"Фургоны",
+                        "price":"от 4 200 000 ₽",
+                        "img":"category-img2",
+                        })
+                        @@include('components/cards/_category-card.html',{
+                        "title":"Платформы",
+                        "price":"от 4 100 000 ₽",
+                        "img":"category-img3",
+                        })
+                        @@include('components/cards/_category-card.html',{
+                        "title":"Автобусы",
+                        "price":"от 8 900 000 ₽",
+                        "img":"category-img4",
+                        })
+                        @@include('components/cards/_category-card.html',{
+                        "title":"Самосвалы",
+                        "price":"от 6 800 000 ₽",
+                        "img":"category-img5",
+                        })
+                        @@include('components/cards/_category-card.html',{
+                        "title":"Прицепы и полуприцепы",
+                        "price":"от 3 200 000 ₽",
+                        "img":"category-img6",
+                        })
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-index">
+                <div class="decor-wrap">
+                    <div class="decor-wrap__inner">
+                        <div class="container">
+                            <div class="h2 caps-text-tablet">
+                                Услуги для вас и вашей техники
+                            </div>
+                            <div class="_mt40 _mt24-tablet grid2 grid-tablet2 grid-mob">
+                                @@include('components/cards/_service-card.html',{
+                                "title":"Сервисное обслуживание",
+                                "desc":"Техническое обслуживание и ремонт любой сложности на профильном оборудовании. Гарантия на все работы и материалы.",
+                                "img":"service-img",
+                                })
+                                @@include('components/cards/_service-card.html',{
+                                "title":"Сервисное обслуживание",
+                                "desc":"Большой склад запасных частей в наличии в Красноярске и работа под заказ. Гарантия на все запасные части",
+                                "img":"service-img2",
+                                })
+                                @@include('components/cards/_service-card.html',{
+                                "title":'Продажа <span class="_no-wrap">в лизинг</span>',
+                                "desc":"Выгодные лизинговые программы для вашего бизнеса от наших партнёров",
+                                "img":"service-img3",
+                                })
+                                @@include('components/cards/_service-card.html',{
+                                "title":"Кредитные программы",
+                                "desc":"Подберём оптимальное кредитное предложения для покупки автомобилей и спец.техники",
+                                "img":"service-img4",
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="well-offers m-section">
+                <div class="container">
+                    <div class="h2 caps-text-tablet">
+                        Выгодные предложения
+                    </div>
+                    <div class="offers-slider slider _mt40 _mt24-tablet">
+                        <div class="slider__wrap">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        @@include('components/cards/_offer-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('components/cards/_offer-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('components/cards/_offer-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('components/cards/_offer-card.html')
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-index m-section _last">
+                <div class="container">
+                    <div class="about-index__inner">
+                        <div class="about-index__col">
+                            <div class="h2 caps-text-tablet">
+                                О компании
+                            </div>
+                            <div class="_mt32 _mt16-tablet">
+                                <div class="text black-text80">
+                                    <p>
+                                        «Триал-М» — официальный дилер коммерческой и специальной техники в Красноярске с более чем 20-летним опытом работы на рынке. Мы обеспечиваем бизнес надежным транспортом ведущих брендов, предлагая комплексные решения: от подбора тягачей, фургонов и спецтехники под конкретные логистические задачи до выгодных программ кредитования и прямого лизинга.
+                                    </p>
+                                    <p>
+                                        На базе собственного сертифицированного сервисного центра мы осуществляем полное техническое обслуживание, гарантийный ремонт и диагностику на профильном заводском оборудовании. Наличие собственного склада оригинальных запчастей и квалифицированная команда инженеров позволяют минимизировать время простоя вашей техники и поддерживать.
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="about-index__line"></span>
+                        </div>
+                        <div class="about-index__col2">
+                            <div class="about-index__img">
+                                <img src="img/about-index.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

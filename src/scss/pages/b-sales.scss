@@ -1,0 +1,58 @@
+.sales{
+  &__desc{
+    max-width: 26em;
+  }
+}
+
+.contacts{
+  &__grid{
+    display: grid;
+    grid-template-columns: calc(100% - 44.3125em) 40.3125em;
+    gap: 2em 4em;
+  }
+}
+
+.contact-group{
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid rgba($white,.2);
+  @include grid100gap(.75em);
+  &:last-child{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+}
+
+.contact-item{
+  &__links{
+    display: flex;
+    gap: 1.5em;
+  }
+}
+
+.map{
+  height: 35.875em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 992px){
+  .contacts{
+    &__grid{
+      grid-template-columns: 100%;
+    }
+  }
+
+
+  .map{
+    height: 25em;
+  }
+
+}
+
+
+@media screen and (max-width: 576px){
+
+}

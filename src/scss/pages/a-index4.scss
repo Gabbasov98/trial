@@ -1,0 +1,186 @@
+.main-index{
+  padding: 10.875em 0 4.5em;
+  position: relative;
+  &__img{
+    @include imgCover(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    $cut: 56px;   // ширина диагонали по горизонтали
+    $start: 34%;  // где начинается диагональ (от левого края)
+    $h: $cut * 0.577; // высота ступеньки, ≈ 32px
+    overflow: hidden;
+    clip-path: polygon(
+                    0 0,
+                    100% 0,
+                    100% calc(100% - #{$h}),
+                    calc(#{$start} + #{$cut}) calc(100% - #{$h}),
+                    $start 100%,
+                    0 100%
+    );
+    &:after,
+    &:before{
+      clip-path: inherit;
+    }
+    &:after{
+      opacity: 0.5;
+      background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.58) 37.23%, rgba(0, 0, 0, 0.10) 65.87%, rgba(0, 0, 0, 0.00) 100%);
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+      background: #000;
+      z-index: 3;
+    }
+    ._view2{
+      display: none;
+    }
+  }
+  &__inner{
+    position: relative;
+    z-index: 4;
+  }
+  &__top{
+    max-width: 55.25em;
+  }
+  &__nav{
+    gap: 1.25em;
+  }
+  &__btn{
+    padding: 0 2.25em;
+  }
+  &__bottom{
+    margin-top: 19.94em;
+  }
+  &__item{
+    @include center;
+    height: 4.5em;
+    border-radius: 0.75em;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: rgba(82, 82, 82, 0.30);
+    backdrop-filter: blur(8.199999809265137px);
+    font-weight: 600;
+    img{
+      height: 2.25em;
+      width: auto;
+      margin-right: 1.5em;
+    }
+  }
+}
+
+.error404{
+  padding: 10.875em 0;
+  flex-grow: 1;
+  position: relative;
+  &__img{
+    @include imgCover(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    &:after{
+      opacity: 0.8;
+      background: linear-gradient(144deg, #000 9.84%, rgba(0, 0, 0, 0.58) 38.49%, rgba(0, 0, 0, 0.10) 60.53%, rgba(0, 0, 0, 0.00) 86.8%);
+    }
+  }
+  &__inner{
+    position: relative;
+    z-index: 2;
+  }
+  &__desc{
+    max-width: 23.375em;
+  }
+  &__nav{
+    gap: 1.25em;
+  }
+  &__btn{
+    padding: 0 1.5em;
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .main-index{
+    padding: 0;
+    &__inner{
+      padding: 8.6875em 0 2.3125em;
+      display: flex;
+      flex-direction: column;
+      min-height: $vh;
+    }
+    &__img{
+      clip-path: unset;
+      &:before{
+        opacity: 0.8;
+        background: linear-gradient(136deg, #000 11.57%, rgba(0, 0, 0, 0.58) 51.19%, rgba(0, 0, 0, 0.10) 81.68%, rgba(0, 0, 0, 0.00) 118%);
+      }
+      &:after{
+        display: none;
+      }
+    }
+    &__nav{
+      gap: .5em;
+    }
+    &__btn{
+      height: 3em;
+      img{
+        width: 1em;
+      }
+    }
+    &__bottom{
+      margin-top: auto;
+      padding-top: 3em;
+      grid-template-columns: 100%;
+      gap: .5em;
+    }
+    &__item{
+      height: 3.375em;
+      img{
+        height: 1.25em;
+        margin-right: 1em;
+      }
+    }
+  }
+
+  .error404{
+    padding: 7.69em 0 2.5em;
+    &__nav{
+      gap: .5em;
+      margin-top: 10em;
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px){
+  .error404,
+  .main-index{
+    &__nav{
+      flex-direction: column;
+    }
+    &__btn{
+      width: 100%;
+      height: 3em;
+      padding: 0;
+    }
+  }
+
+  .main-index{
+    &__img{
+      ._view1{
+        display: none;
+      }
+      ._view2{
+        display: block;
+      }
+    }
+  }
+}

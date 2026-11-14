@@ -1,0 +1,165 @@
+.product-detail{
+  &__tabs{
+    display: flex;
+    gap: 1.5em;
+  }
+  &__tab{
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+      color: $primary;
+    }
+    span{
+      font-size: 1.5em;
+      line-height: 120%;
+    }
+    &._active{
+      color: $primary;
+      text-decoration: underline;
+      pointer-events: none;
+    }
+  }
+  .tab-content{
+    margin-top: 1.5em;
+  }
+  .text{
+    p{
+      line-height: 155%;
+    }
+  }
+}
+
+.props-table{
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  th{
+    background: #313740;
+    font-weight: 600;
+    text-align: left;
+  }
+  th,td{
+    height: 2.5625em;
+    padding: .5em 1.5em;
+    border: 1px solid #464D55;
+    &:nth-child(2){
+      width: 38%;
+    }
+  }
+  td{
+    background-color: $black;
+  }
+  span{
+    font-size: 1.25em;
+    line-height: 125%;
+  }
+}
+
+.article{
+  &__top{
+    gap: .5em;
+    span{
+      letter-spacing: .01em;
+      font-size: .875em;
+    }
+  }
+  .text{
+    gap: 1.5em;
+    p,li{
+      line-height: 155%;
+    }
+    img{
+      border-radius: 1.25em;
+    }
+    .img-desc{
+      font-size: 1em;
+      line-height: 125%;
+      letter-spacing: .01em;
+      margin-top: -.5em;
+      opacity: .7;
+    }
+  }
+}
+
+.catalog-about{
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(2,calc(50% - 1.875em));
+    gap: 1em 3.75em;
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .product-detail{
+    &__tabs{
+      gap: 0;
+    }
+    &__tab{
+      @include center;
+      width: 50%;
+      height: 2.3125em;
+      color: rgba($white, 0.50);
+      border-bottom: 1px solid #D5D7D9;
+      span{
+        font-size: 1em;
+      }
+      &._active{
+        border-color: $primary;
+        text-decoration: none;
+      }
+    }
+    .tab-content{
+      margin-top: 1.25em;
+    }
+  }
+
+  .props-table{
+    font-size: .875em;
+    span{
+      font-size: 1em;
+    }
+    th,td{
+      &:nth-child(2){
+        width: auto;
+      }
+    }
+  }
+
+  .article{
+    &__top{
+      span{
+        font-size: .75em;
+      }
+    }
+    .text{
+      gap: 1em;
+      img{
+        border-radius: .5em;
+      }
+      .img-desc{
+        font-size: .75em;
+        line-height: 135%;
+        margin-top: -.33em;
+      }
+    }
+  }
+
+  .catalog-about{
+    &__grid{
+      grid-template-columns: 100%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px){
+  .article{
+    &__back{
+      width: 100%;
+    }
+  }
+}

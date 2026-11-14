@@ -1,0 +1,52 @@
+<div class="service-req">
+    <div class="service-req__col">
+        <div class="h2 caps-text-tablet">
+            Запишитесь
+            <span class="_no-wrap">на сервисное</span>
+            обслуживание
+        </div>
+        <div class="service-req__desc _mt16 _mt8-tablet">
+            <div class="text16 text14-tablet lh155">
+                Оставьте заявку, и наше менеджер
+                свяжется с вами для подтверждения
+                записи на удобное время.
+            </div>
+        </div>
+    </div>
+    <div class="service-req__col2">
+        <form action="" class="service-form">
+            <div class="service-form__grid">
+                <div class="fg _full">
+                    <input type="text" placeholder="Ваше имя">
+                </div>
+                <div class="fg _full">
+                    <input type="tel" placeholder="Ваш номер телефона">
+                </div>
+                @@if(all !== ""){
+                <div class="fg">
+                    <select>
+                        <option selected disabled hidden>Услуга</option>
+                        <option>Услуга 1</option>
+                        <option>Услуга 2</option>
+                    </select>
+                </div>
+                <div class="fg">
+                    <input type="date" placeholder="Дата">
+                </div>
+                }
+                <button class="service-form__btn m-btn m-btn-orange _full">
+                    <span>Записаться на сервис</span>
+                    <img src="img/arrow-right.svg" alt="">
+                </button>
+            </div>
+            <div class="m-check">
+                <input type="checkbox">
+                <label>
+                    <span class="text14 lh155 white-text60">
+                        Подтверждаю согласие с политикой конфиденциальности
+                    </span>
+                </label>
+            </div>
+        </form>
+    </div>
+</div>

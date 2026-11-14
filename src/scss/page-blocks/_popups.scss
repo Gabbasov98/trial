@@ -1,0 +1,126 @@
+.modal-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $vh;
+    opacity: 0.6;
+    background: #000;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100 * var(--vh));
+    overflow-y: auto;
+    z-index: 80;
+    opacity: 0;
+    pointer-events: none;
+    //transition: all .3s;
+    padding: 5em 0 1em;
+    text-align: center;
+
+    &:after {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -4px;
+    }
+    &__dialog {
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    &._active {
+        opacity: 1;
+        pointer-events: unset;
+        .modal__bg {
+            display: block;
+        }
+    }
+    &__dialog {
+        background: $blue;
+        color: $white;
+        width: 37.5em;
+        max-width: calc(100% - 2em);
+        position: relative;
+        z-index: 3;
+        padding: 3em;
+        border-radius: 1em;
+        display: inline-block;
+    }
+    &__top{
+        max-width: 23em;
+    }
+    .close-btn{
+        position: fixed;
+        top: 1.75em;
+        right: 1.75em;
+        z-index: 3;
+    }
+}
+
+.close-btn{
+    width: 2.5em;
+    height: 2.5em;
+    @include center;
+    margin-left: 1em;
+    flex-shrink: 0;
+    img,svg{
+        width: 1.5em;
+    }
+}
+
+.thank-modal{
+    .modal__dialog{
+        text-align: center;
+        background-color: $white;
+        color: $black;
+    }
+    .modal__top{
+        max-width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 4em;
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 992px){
+    .modal{
+        &__dialog {
+            padding: 1.5em 1em;
+        }
+        .close-btn{
+            top: .5em;
+            right: .5em;
+        }
+    }
+
+
+    .thank-modal{
+        .modal__top{
+            img{
+                width: 2.5em;
+                margin-bottom: 1.25em;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .modal{
+        &__top {
+            max-width: 16em;
+        }
+    }
+}

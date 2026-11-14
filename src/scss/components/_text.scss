@@ -1,0 +1,242 @@
+._no-wrap{
+  white-space: nowrap;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.caps-text{
+  text-transform: uppercase;
+}
+
+.underline-text{
+  text-decoration: underline;
+}
+
+.text h1,
+.h1{
+  font-size: 3.5em;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.text h2,
+.h2{
+  font-size: 3em;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.text h3,
+.h2-small{
+  font-size: 2.5em;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.text h4,
+.h3{
+  font-size: 2em;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.text h5,
+.text h6,
+.h4,
+.h5{
+  font-weight: 700;
+}
+
+.text h5,
+.h4,
+.text24{
+  font-size: 1.5em;
+  line-height: 135%;
+}
+
+.text h6,
+.h5,
+.text20{
+  font-size: 1.25em;
+  line-height: 135%;
+}
+
+.text19{
+  font-size: 1.1875em;
+  line-height: 135%;
+}
+
+.text18{
+  font-size: 1.125em;
+  line-height: 135%;
+}
+
+.text17{
+  font-size: 1.0625em;
+  line-height: 135%;
+}
+
+.text p,
+.text li,
+.text16{
+  font-size: 1em;
+  line-height: 135%;
+}
+
+.text15{
+  font-size: .9375em;
+  line-height: 135%;
+}
+
+.text14{
+  font-size: .875em;
+  line-height: 135%;
+}
+
+.text13{
+  font-size: .8125em;
+  line-height: 135%;
+}
+
+.text12{
+  font-size: .75em;
+  line-height: 135%;
+}
+
+.text11{
+  font-size: .6875em;
+  line-height: 135%;
+}
+
+.text10{
+  font-size: .625em;
+  line-height: 135%;
+}
+
+.extra-bold-text{
+  font-weight: 800;
+}
+
+.bold-text{
+  font-weight: 700;
+}
+
+.semi-bold-text{
+  font-weight: 600;
+}
+
+.medium-text{
+  font-weight: 500;
+}
+
+.regular-text{
+  font-weight: 400;
+}
+
+.light-text{
+  font-weight: 300;
+}
+
+.italic-text{
+  font-style: italic;
+}
+
+.white-text40{
+  color: rgba($white,.4);
+}
+
+.white-text60{
+  color: rgba($white,.6);
+}
+
+.white-text80{
+  color: rgba($white,.8);
+}
+
+.black-text80{
+  color: rgba($black,.8);
+}
+
+.orange-text{
+  color: $primary;
+}
+
+.font2{
+  font-family: $font2;
+}
+
+.lh120{
+  line-height: 120%;
+}
+
+.lh155{
+  line-height: 155%;
+}
+
+
+@media screen and (max-width: 992px){
+  .text h1,
+  .text h2,
+  .text h3,
+  .text h4,
+  .h1,
+  .h2,
+  .h2-small,
+  .h3{
+    font-size: 1.5em;
+  }
+
+  .text h5,
+  .text h6,
+  .text20-tablet{
+    font-size: 1.25em;
+  }
+
+  .text19-tablet{
+    font-size: 1.1875em;
+  }
+
+  .text18-tablet{
+    font-size: 1.125em;
+  }
+
+  .text17-tablet{
+    font-size: 1.0625em;
+  }
+
+  .text16-tablet{
+    font-size: 1em;
+  }
+
+  .text15-tablet{
+    font-size: .9375em;
+  }
+
+  .text p,
+  .text li,
+  .text14-tablet{
+    font-size: .875em;
+  }
+
+  .text13-tablet{
+    font-size: .8125em;
+  }
+
+  .text12-tablet{
+    font-size: .75em;
+  }
+
+  .text11-tablet{
+    font-size: .6875em;
+  }
+
+  .text10-tablet{
+    font-size: .625em;
+  }
+
+  .caps-text-tablet{
+    text-transform: uppercase;
+  }
+}

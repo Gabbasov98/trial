@@ -1,0 +1,79 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <a href="sales.html" style="display: block; margin-bottom: 20px;">
+            Акции
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Товар
+        </a>
+        <a href="article.html" style="display: block; margin-bottom: 20px;">
+            Статья
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="catalog2.html" style="display: block; margin-bottom: 20px;">
+            Каталог 2
+        </a>
+        <a href="repair.html" style="display: block; margin-bottom: 20px;">
+            Сервис
+        </a>
+        <a href="service-item.html" style="display: block; margin-bottom: 20px;">
+            Сервис
+        </a>
+        <a href="spare.html" style="display: block; margin-bottom: 20px;">
+            Запасные части
+        </a>
+
+
+
+
+        <button data-modal="reqModal" style="border: 2px solid #fff; color: #fff; margin-bottom: 20px;">
+            Получить
+            предложение
+        </button>
+        <button data-modal="thankModal" style="border: 2px solid #fff; color: #fff; margin-bottom: 20px;">
+            Спасибо
+        </button>
+
+
+    </div>
+
+
+
+
+
+
+
+    @@include('components/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

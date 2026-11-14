@@ -1,0 +1,90 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru",
+"title":"Каталог", "description":"", "keywords":"",})
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <div class="sales m-section _first">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="">Главная </a></li>
+                            <li><span>Каталог</span></li>
+                        </ul>
+                    </div>
+                    <h1 class="h2-small caps-text">
+                        Каталог коммерческой техники
+                    </h1>
+                    <div class="_mt60 _mt32-tablet grid3 grid-tablet2 grid-mob">
+                        @@include('components/cards/_category-card.html',{
+                        "title":"Тягачи",
+                        "price":"от 6 500 000 ₽",
+                        "img":"category-img",
+                        })
+                        @@include('components/cards/_category-card.html',{
+                        "title":"Фургоны",
+                        "price":"от 4 200 000 ₽",
+                        "img":"category-img2",
+                        })
+                        @@include('components/cards/_category-card.html',{
+                        "title":"Платформы",
+                        "price":"от 4 100 000 ₽",
+                        "img":"category-img3",
+                        })
+                        @@include('components/cards/_category-card.html',{
+                        "title":"Автобусы",
+                        "price":"от 8 900 000 ₽",
+                        "img":"category-img4",
+                        })
+                        @@include('components/cards/_category-card.html',{
+                        "title":"Самосвалы",
+                        "price":"от 6 800 000 ₽",
+                        "img":"category-img5",
+                        })
+                        @@include('components/cards/_category-card.html',{
+                        "title":"Прицепы и полуприцепы",
+                        "price":"от 3 200 000 ₽",
+                        "img":"category-img6",
+                        })
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-about m-section">
+                <div class="container">
+                    <div class="h2-small">
+                        О компании
+                    </div>
+                    <div class="catalog-about__grid _mt32 _mt16-tablet">
+                        <div class="catalog-about__col">
+                            <div class="text">
+                                <p>
+                                    Автомобиль поступил с тусклым лаком и загрязнённым салоном. Мы выполнили многоэтапную полировку кузова, глубоко очистили салон и нанесли керамическое покрытие для длительной защиты. Машина заметно преобразилась и теперь выглядит как после салона. Автомобиль поступил с тусклым лаком и загрязнённым салоном. Мы выполнили многоэтапную полировку кузова, глубоко очистили салон и нанесли керамическое покрытие для длительной защиты. Машина заметно преобразилась и теперь выглядит как после салона.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog-about__col2">
+                            <div class="text">
+                                <p>
+                                    Автомобиль поступил с тусклым лаком и загрязнённым салоном. Мы выполнили многоэтапную полировку кузова, глубоко очистили салон и нанесли керамическое покрытие для длительной защиты. Машина заметно преобразилась и теперь выглядит как после салона. Автомобиль поступил с тусклым лаком и загрязнённым салоном. Мы выполнили многоэтапную полировку кузова, глубоко очистили салон и нанесли керамическое покрытие для длительной защиты. Машина заметно преобразилась и теперь выглядит как после салона.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

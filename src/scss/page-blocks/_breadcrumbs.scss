@@ -1,0 +1,41 @@
+@import "../vars.scss";
+.breadcrumbs {
+    margin-bottom: 1.5em;
+    color: rgba($white,.6);
+    li{
+        display: inline;
+        position: relative;
+        &:not(:first-child) {
+            margin-left: 1.5em;
+            &:before {
+                content: '';
+                position: absolute;
+                top: .5em;
+                right: 100%;
+                margin-right: .625em;
+                background: rgba($white,.6);
+                border-radius: 50%;
+                width: .375em;
+                height: .375em;
+                @include bgImgSize(100%);
+            }
+        }
+        &:last-child{
+            pointer-events: none;
+        }
+    }
+    a,span{
+        font-size: 1em;
+        line-height: 135%;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    .breadcrumbs{
+        margin-bottom: 2em;
+        ul{
+            font-size: .75em;
+        }
+    }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru",
+"title":"Каталог", "description":"", "keywords":"",})
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <div class="catalog m-section _first">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="">Главная </a></li>
+                            <li><a href="">Каталог</a></li>
+                            <li><span>Седельные тягачи</span></li>
+                        </ul>
+                    </div>
+                    <h1 class="h2-small caps-text">
+                        Седельные тягачи
+                    </h1>
+                    <div class="catalog__grid _mt32 _mt24-tablet">
+                        <div class="catalog__col">
+                            <div class="filter">
+                                <div class="filter__top _flex-between">
+                                    <div class="text20 text14-tablet semi-bold-text">
+                                        Подбор по параметрам
+                                    </div>
+                                    <button class="filter__close _toggle-filter">
+                                        <img src="img/close.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="filter__scroll">
+                                    <div class="filter__groups">
+                                        <div class="filter-group">
+                                            <div class="h6">
+                                                Бренд
+                                            </div>
+                                            <div class="filter-group__checks">
+                                                @@include('components/ui/_m-check.html',{"title":"FAW"})
+                                                @@include('components/ui/_m-check.html',{"title":"FAW"})
+                                                @@include('components/ui/_m-check.html',{"title":"FAW"})
+                                                @@include('components/ui/_m-check.html',{"title":"FAW"})
+                                                @@include('components/ui/_m-check.html',{"title":"FAW"})
+                                                @@include('components/ui/_m-check.html',{"title":"FAW"})
+                                            </div>
+                                        </div>
+                                        <div class="filter-group">
+                                            <div class="h6">
+                                                Колесная формула
+                                            </div>
+                                            <div class="filter-group__checks">
+                                                @@include('components/ui/_m-check.html',{"title":"FAW"})
+                                                @@include('components/ui/_m-check.html',{"title":"FAW"})
+                                                @@include('components/ui/_m-check.html',{"title":"FAW"})
+                                                @@include('components/ui/_m-check.html',{"title":"FAW"})
+                                                @@include('components/ui/_m-check.html',{"title":"FAW"})
+                                                @@include('components/ui/_m-check.html',{"title":"FAW"})
+                                            </div>
+                                        </div>
+                                        <div class="filter-group">
+                                            <div class="h6">
+                                                Мощность, л.с.
+                                            </div>
+                                            <div class="filter-group__checks">
+                                                <div class="filter-slider" data-start="400" data-start2="500" data-min="300" data-max="600">
+                                                    <div class="filter-slider__inputs">
+                                                        <div class="filter-slider__inputs-item">
+                                                            <input class="range-slider__input1" type="number">
+                                                            <div class="filter-slider__inputs-title">
+                                                                <div class="text16">от</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="filter-slider__inputs-item">
+                                                            <input class="range-slider__input2" type="number">
+                                                            <div class="filter-slider__inputs-title">
+                                                                <div class="text16">до</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter-slider__item">
+                                                        <div class="range-slider"></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="filter-group">
+                                            <div class="h6">
+                                                КПП
+                                            </div>
+                                            <div class="filter-group__checks">
+                                                @@include('components/ui/_m-check.html',{"title":"Механическая (10)"})
+                                                @@include('components/ui/_m-check.html',{"title":"Автоматическая (8)"})
+                                            </div>
+                                        </div>
+                                        <div class="filter-group">
+                                            <div class="h6">
+                                                Грузоподъемность, т.
+                                            </div>
+                                            <div class="filter-group__checks">
+                                                <div class="filter-slider" data-start="20" data-start2="30" data-min="10" data-max="40">
+                                                    <div class="filter-slider__inputs">
+                                                        <div class="filter-slider__inputs-item">
+                                                            <input class="range-slider__input1" type="number">
+                                                            <div class="filter-slider__inputs-title">
+                                                                <div class="text16">от</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="filter-slider__inputs-item">
+                                                            <input class="range-slider__input2" type="number">
+                                                            <div class="filter-slider__inputs-title">
+                                                                <div class="text16">до</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter-slider__item">
+                                                        <div class="range-slider"></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter__nav">
+                                        <button class="white-text60 underline-text lh155">
+                                            <span class="text16">Сбросить фильтр</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-mob _toggle-filter">
+                                <div class="text14 semi-bold-text">
+                                    Подбор по параметрам
+                                </div>
+                                <img src="img/sym-filter.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="catalog__col2">
+                            <div class="catalog__items">
+                                @@include('components/cards/_product-card.html')
+                                @@include('components/cards/_product-card.html')
+                                @@include('components/cards/_product-card.html')
+                                @@include('components/cards/_product-card.html')
+                                @@include('components/cards/_product-card.html')
+                                @@include('components/cards/_product-card.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

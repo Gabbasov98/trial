@@ -1,0 +1,173 @@
+.main-spare,
+.main-repair{
+  .main-index__top{
+    max-width: 53.25em;
+  }
+  .main-index__desc2{
+    max-width: 21.875em;
+  }
+  .main-index__img{
+    &:before{
+      opacity: 1;
+      background: linear-gradient(144deg, #000 9.84%, rgba(0, 0, 0, 0.58) 38.49%, rgba(0, 0, 0, 0.10) 60.53%, rgba(0, 0, 0, 0.00) 86.8%);
+    }
+    &:after{
+      opacity: 0.6;
+      background: linear-gradient(108deg, #000 17.68%, rgba(0, 0, 0, 0.58) 37.65%, rgba(0, 0, 0, 0.10) 53.02%, rgba(0, 0, 0, 0.00) 71.32%);
+    }
+  }
+}
+
+.adv-item{
+  border-radius: 0.75em;
+  border: $border;
+  padding: 1.5em 1em;
+  text-align: center;
+  br{
+    display: none;
+  }
+}
+
+.repair-card{
+  border-radius: 0.75em;
+  background: #F3F4F8;
+  &__img{
+    @include imgCover(51.7%);
+    border-radius: .75em .75em 0 0;
+  }
+  &__content{
+    padding: 1em 1.25em 1.5em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1em;
+  }
+  &__link{
+    padding: 0;
+    width: 2.75em;
+    height: 2.75em;
+    border-radius: .25em;
+    svg{
+      width: 1.5em;
+    }
+    &:hover{
+      path{
+        fill: $white;
+      }
+    }
+  }
+}
+
+.service-req{
+  background-color: $blue;
+  color: $white;
+  padding: 3em;
+  border-radius: 1em;
+  display: grid;
+  grid-template-columns: 23em 33.3125em;
+  justify-content: space-between;
+  &__desc{
+    max-width: 18.25em;
+  }
+}
+
+.service-form{
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(2,calc(50% - .375em));
+    gap: .75em;
+  }
+  &__btn{
+    border-radius: .5em;
+    justify-content: space-between;
+  }
+  .m-check{
+    margin-top: 1.25em;
+  }
+}
+
+._full{
+  grid-column: 1/-1;
+}
+
+
+@media screen and (max-width: 992px){
+  .main-spare,
+  .main-repair{
+    .main-index__inner{
+      padding-bottom: 4em;
+      min-height: unset;
+    }
+    .breadcrumbs{
+      display: none;
+    }
+    .main-index__nav{
+      gap: .75em;
+    }
+    .main-index__img{
+      $cut: 2.5em;   // ширина диагонали по горизонтали
+      $start: 27%;  // где начинается диагональ (от левого края)
+      $h: $cut * 0.577; // высота ступеньки, ≈ 23px
+
+      clip-path: polygon(
+                      0 0,
+                      100% 0,
+                      100% calc(100% - #{$h}),
+                      calc(#{$start} + #{$cut}) calc(100% - #{$h}),
+                      $start 100%,
+                      0 100%
+      );
+      &:before{
+        opacity: 0.8;
+        background: linear-gradient(136deg, #000 11.57%, rgba(0, 0, 0, 0.58) 51.19%, rgba(0, 0, 0, 0.10) 81.68%, rgba(0, 0, 0, 0.00) 118%);
+      }
+      &:after{
+        display: none;
+      }
+    }
+  }
+
+  .adv-item{
+    padding: 1em .5em;
+    br{
+      display: unset;
+    }
+  }
+
+  .repair-card{
+    &__content{
+      align-items: center;
+    }
+  }
+
+  .service-req{
+    padding: 1.5em 1.25em;
+    border-radius: 1em;
+    grid-template-columns: repeat(2,calc(50% - .5em));
+    gap: 1.5em 1em;
+    &__desc{
+      max-width: 16.25em;
+    }
+  }
+
+  .service-form{
+    &__grid{
+      grid-template-columns: 100%;
+      gap: .5em;
+    }
+    &__btn{
+      border-radius: .25em;
+      justify-content: center;
+    }
+    .m-check{
+      margin-top: .5em;
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px){
+  .service-req{
+    grid-template-columns: 100%;
+  }
+}

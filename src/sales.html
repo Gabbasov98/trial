@@ -1,0 +1,48 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru",
+"title":"Акции", "description":"", "keywords":"",})
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <div class="sales m-section _first">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="">Главная </a></li>
+                            <li><span>Акции</span></li>
+                        </ul>
+                    </div>
+                    <h1 class="h2-small caps-text">
+                        акции <span class="_no-wrap">и спецпредложения</span>
+                    </h1>
+                    <div class="sales__desc _mt16">
+                        <div class="text16 text14-tablet medium-text lh155">
+                            Выгодные предложения на коммерческую технику,
+                            запчасти и сервисное обслуживание
+                        </div>
+                    </div>
+                    <div class="_mt60 _mt32-tablet grid3 grid-tablet2 grid-mob">
+                        @@include('components/cards/_offer-card.html')
+                        @@include('components/cards/_offer-card.html')
+                        @@include('components/cards/_offer-card.html')
+                        @@include('components/cards/_offer-card.html')
+                        @@include('components/cards/_offer-card.html')
+                        @@include('components/cards/_offer-card.html')
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

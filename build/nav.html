@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <a href="sales.html" style="display: block; margin-bottom: 20px;">
+            Акции
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Товар
+        </a>
+        <a href="article.html" style="display: block; margin-bottom: 20px;">
+            Статья
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="catalog2.html" style="display: block; margin-bottom: 20px;">
+            Каталог 2
+        </a>
+        <a href="repair.html" style="display: block; margin-bottom: 20px;">
+            Сервис
+        </a>
+        <a href="service-item.html" style="display: block; margin-bottom: 20px;">
+            Сервис
+        </a>
+        <a href="spare.html" style="display: block; margin-bottom: 20px;">
+            Запасные части
+        </a>
+
+
+
+
+        <button data-modal="reqModal" style="border: 2px solid #fff; color: #fff; margin-bottom: 20px;">
+            Получить
+            предложение
+        </button>
+        <button data-modal="thankModal" style="border: 2px solid #fff; color: #fff; margin-bottom: 20px;">
+            Спасибо
+        </button>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="reqModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <button class="close-btn _close-modal">
+            <img src="img/close2.svg" alt="">
+        </button>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="h2 caps-text-tablet">
+                    Получить
+                    предложение
+                </div>
+                <div class="modal__desc _mt16 _mt8-tablet">
+                    <div class="text14 lh155">
+                        Оставьте заявку, и наше менеджер свяжется с вами
+                        для подтверждения записи на удобное время.
+                    </div>
+                </div>
+            </div>
+            <div class="_mt32 _mt20-tablet">
+                <form action="" class="service-form">
+                    <div class="service-form__grid">
+                        <div class="fg _full">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="fg _full">
+                            <input type="tel" placeholder="Ваш номер телефона">
+                        </div>
+                        <button class="service-form__btn m-btn m-btn-orange _full">
+                            <span>Отправить</span>
+                            <img src="img/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="m-check">
+                        <input type="checkbox">
+                        <label>
+                            <span class="text14 lh155 white-text60">
+                        Подтверждаю согласие с политикой конфиденциальности
+                    </span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal thank-modal" id="thankModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <button class="close-btn _close-modal">
+            <img src="img/close2.svg" alt="">
+        </button>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <img src="img/check2.svg" alt="">
+                <div class="h2 caps-text-tablet">
+                    Вы успешно записались!
+                </div>
+                <div class="_mt24 _mt16-tablet">
+                    <div class="text20 text14-tablet lh155">
+                        Спасибо за заявку! Наш менеджер свяжется с вами
+                        <span class="_no-wrap">в ближайшее время,</span> чтобы подтвердить запись.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

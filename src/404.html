@@ -1,0 +1,56 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru",
+"title":"404", "description":"", "keywords":"",})
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <div class="error404">
+                <div class="error404__img m-backdrop">
+                    <img src="img/error404.webp" alt="">
+                </div>
+                <div class="container">
+                    <div class="error404__inner">
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li><a href="">Главная </a></li>
+                                <li><span>404</span></li>
+                            </ul>
+                        </div>
+                        <h1 class="h2-small caps-text">
+                            Страница не найдена
+                        </h1>
+                        <div class="error404__desc _mt16">
+                            <div class="text16 text14-tablet medium-text lh155">
+                                Возможно, вы перешли по устаревшей ссылке
+                                или неверно ввели адрес. Но не переживайте
+                                <span class="_no-wrap">мы всегда</span> на правильном пути.
+                            </div>
+                        </div>
+                        <div class="error404__nav _mt32 _mt16-tablet _flex">
+                            <a href="" class="error404__btn m-btn m-btn-orange">
+                                <span>Вернуться на главную</span>
+                                <img src="img/arrow-right.svg" alt="">
+                            </a>
+                            <a href="" class="error404__btn m-btn m-btn-white-outline">
+                                <span>Перейти в каталог</span>
+                                <img src="img/arrow-right.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

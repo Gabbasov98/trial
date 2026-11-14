@@ -1,0 +1,17 @@
+:root {
+    --vh: 1vh;
+}
+
+$font1:'Exo 2.0', sans-serif;
+$font2:'Unbounded', sans-serif;
+$black: #2a3138;
+$white: #fff;
+$primary: #f26834;
+$primaryHover: #DE5B2A;
+$light: #f3efe9;
+$blue: #17202a;
+$bg: #303740;
+$vh: calc(100 * var(--vh));
+$border: 1px solid #464D55;
+$border2: 1px solid #CFCFD0;
+$cut: 4em;
