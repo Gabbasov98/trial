@@ -58,6 +58,9 @@
   .swiper-slide{
     width: calc(100% / 3);
   }
+  .swiper-button{
+    border-color: $black;
+  }
 }
 
 .offer-card{
